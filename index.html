@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1 class="title">Food Explorer</h1>
+        <p class="subtitle">Discover delicious recipes from around the world</p>
+    </header>
+    <main>
+        <section class="search-section">
+            <form class="search-form" id="sub">
+                <input type="text" id="search" placeholder="Enter a food category (e.g., seafood)">
+                <button class="search-button" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="random-button" id="random">Random</button>
+        </section>
+        <section class="results-section">
+            <h2 id="random-heading" class="heading"></h2>
+            <div id="random-meal" class="meal-container"></div>
+            <hr>
+            <h2 id="category-heading" class="heading"></h2>
+            <div id="search-results" class="meal-container"></div>
+        </section>
+    </main>
+    <div id="modal-container" class="modal-container">
+        <div class="modal-content">
+            <span class="close">X</span>
+            <h2 id="modal-title">Ingredients</h2>
+            <ul id="modal-ingredients"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
